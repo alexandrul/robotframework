@@ -546,5 +546,9 @@ def run(*tests, **options):
     return RobotFramework().execute(*tests, **options)
 
 
-if __name__ == '__main__':
+def entry_point():
     run_cli(sys.argv[1:])
+
+
+if __name__ == '__main__':
+    entry_point()

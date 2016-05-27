@@ -407,6 +407,9 @@ def rebot(*outputs, **options):
     return Rebot().execute(*outputs, **options)
 
 
-if __name__ == '__main__':
+def entry_point():
     rebot_cli(sys.argv[1:])
 
+
+if __name__ == '__main__':
+    entry_point()
