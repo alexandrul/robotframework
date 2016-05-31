@@ -1,0 +1,16 @@
+language: python
+sudo: false
+python:
+  - "2.7"
+  - "3.5"
+  - "3.6"
+install:
+  #- pip install pep8 --use-mirrors
+  #- pip install pyflakes --use-mirrors
+  - pip install robotframework
+  - pip install selenium
+  - pip install decorator
+  - pip install docutils
+script:
+  - "firefox --version"
+  - "python utest/run.py"
